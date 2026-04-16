@@ -116,3 +116,8 @@ margin-top: 20px;
 width: 220px;
 }
 }
+.section .card p {
+margin-bottom: 15px;
+line-height: 1.7;
+color: #555;
+}
