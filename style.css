@@ -184,3 +184,6 @@ cursor: pointer;
     transform: translateY(0);
   }
 }
+.section {
+  border-top: 1px solid #eee;
+}
