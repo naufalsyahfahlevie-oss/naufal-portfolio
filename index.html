@@ -8,138 +8,128 @@
 </head>
 <body>
 
-  <!-- HERO -->
+<!-- NAVBAR -->
 
-  <section class="hero">
-    <div class="text">
-      <h1>
-        Membangun Masa Depan Pertanian Indonesia <br>
-        <span>Naufal Syahfahlevie Samosir</span>
-      </h1>
-
-```
-  <h3>Presiden BEM FP UB 2026 | Mahasiswa Agroekoteknologi</h3>
-
-  <p>
-    Mahasiswa Agroekoteknologi Universitas Brawijaya yang berfokus pada pertanian berkelanjutan dan agroforestri. 
-    Aktif dalam kepemimpinan organisasi, diplomasi, serta analisis isu strategis sektor pertanian.
-  </p>
-
-  <div class="buttons">
-    <a href="#pengalaman" class="btn">Lihat Pengalaman</a>
-    <a href="mailto:naufalsyhhhh@student.ub.ac.id" class="btn-outline">Hubungi Saya</a>
+<nav class="navbar">
+  <h2>Naufal</h2>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#visi">Visi</a>
   </div>
-</div>
+</nav>
 
-<div class="image">
-  <img src="nOPALL.jpeg" alt="Foto Naufal">
-</div>
-```
+<!-- HERO -->
 
-  </section>
-
-  <!-- PENGALAMAN -->
-
-  <section id="pengalaman" class="section">
-    <h2>Pengalaman Kepemimpinan</h2>
+<section class="hero">
+  <div class="text">
+    <h1>
+      Saya Membangun Arah Baru Pertanian Indonesia <br>
+      <span>Naufal Syahfahlevie Samosir</span>
+    </h1>
 
 ```
-<div class="card">
-  <h3>Presiden BEM FP UB</h3>
-  <p>2026 - Sekarang</p>
-</div>
+<h3>Presiden BEM FP UB 2026 | Mahasiswa Agroekoteknologi</h3>
 
-<div class="card">
-  <h3>Menteri Diplomasi Internal BEM FP UB</h3>
-  <p>2025</p>
-</div>
+<p>
+  Saya percaya pertanian bukan sekadar produksi, tetapi fondasi kedaulatan bangsa. 
+  Melalui kepemimpinan dan gerakan mahasiswa, saya berkomitmen mendorong pertanian berkelanjutan.
+</p>
 
-<div class="card">
-  <h3>Staff Kajian dan Aksi Strategis BEM FP UB</h3>
-  <p>2024</p>
+<div class="buttons">
+  <a href="#pengalaman" class="btn">Lihat Pengalaman</a>
+  <a href="mailto:naufalsyhhhh@student.ub.ac.id" class="btn-outline">Hubungi Saya</a>
 </div>
 ```
 
-  </section>
+  </div>
 
-  <!-- KEGIATAN -->
+  <div class="image">
+    <img src="nOPALL.jpeg" alt="Foto Naufal">
+  </div>
+</section>
 
-  <section class="section">
-    <h2>Pengalaman Kepanitiaan</h2>
+<!-- PENGALAMAN -->
 
-```
-<div class="card">
-  <h3>Ketua Pelaksana Open House FP UB</h3>
-  <p>2024</p>
+<section id="pengalaman" class="section fade">
+  <h2>Pengalaman Kepemimpinan</h2>
+
+  <div class="card" onclick="openModal('bem')">
+    <h3>Presiden BEM FP UB</h3>
+    <p>2026 - Sekarang</p>
+  </div>
+
+  <div class="card">
+    <h3>Menteri Diplomasi Internal</h3>
+    <p>2025</p>
+  </div>
+
+  <div class="card">
+    <h3>Staff Kastrat</h3>
+    <p>2024</p>
+  </div>
+</section>
+
+<!-- VISI -->
+
+<section id="visi" class="section fade">
+  <h2>Visi Saya</h2>
+  <div class="card">
+    <p>
+      Saya meyakini pertanian Indonesia harus bertransformasi menjadi sistem yang berkelanjutan, adaptif, 
+      dan berbasis teknologi, dengan tetap berpihak pada petani.
+    </p>
+  </div>
+</section>
+
+<!-- PENUTUP -->
+
+<section class="section fade">
+  <h2>Penutup</h2>
+  <div class="card">
+    <p>
+      Perubahan membutuhkan keberanian untuk memimpin. Saya siap terus belajar, bergerak, dan berkontribusi.
+    </p>
+  </div>
+</section>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content" id="modal-content"></div>
 </div>
 
-<div class="card">
-  <h3>CO Koordinator Lapang POSTER FP UB</h3>
-  <p>2025</p>
-</div>
+<script>
+function openModal(type) {
+  const content = document.getElementById("modal-content");
 
-<div class="card">
-  <h3>Koordinator Lapang Raja Brawijaya</h3>
-  <p>2024</p>
-</div>
-```
+  if(type === "bem") {
+    content.innerHTML = `
+      <img src="foto1.jpg">
+      <img src="foto2.jpg">
+      <img src="foto3.jpg">
+    `;
+  }
 
-  </section>
+  document.getElementById("modal").style.display = "flex";
+}
 
-  <!-- SKILL -->
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
 
-  <section class="section">
-    <h2>Keahlian</h2>
+const faders = document.querySelectorAll(".fade");
 
-```
-<div class="card">
-  <p><b>Soft Skills:</b> Leadership, Communication, Critical Thinking</p>
-  <p><b>Hard Skills:</b> Soil Analysis, Plant Cultivation, Microsoft Office</p>
-</div>
-```
-
-  </section>
-
-  <!-- VISI -->
-
-  <section class="section">
-    <h2>Visi Saya terhadap Pertanian Indonesia</h2>
-
-```
-<div class="card">
-  <p>
-    Saya meyakini bahwa masa depan pertanian Indonesia tidak hanya ditentukan oleh peningkatan produksi, 
-    tetapi oleh kemampuan kita dalam membangun sistem pertanian yang berkelanjutan, adaptif, dan berpihak pada petani.
-  </p>
-
-  <p>
-    Pertanian Indonesia harus bergerak dari sistem konvensional menuju sistem berbasis ilmu pengetahuan, 
-    teknologi, serta pengelolaan sumber daya yang bijak.
-  </p>
-
-  <p>
-    Saya berkomitmen untuk mendorong transformasi tersebut melalui kepemimpinan dan kontribusi nyata.
-  </p>
-</div>
-```
-
-  </section>
-
-  <!-- CURRENT FOCUS -->
-
-  <section class="section">
-    <h2>Apa yang Sedang Saya Bangun</h2>
-
-```
-<div class="card">
-  <p>
-    Saat ini saya berfokus pada penguatan gerakan mahasiswa pertanian yang berbasis pada isu strategis 
-    dan kebutuhan masyarakat, serta mendorong mahasiswa menjadi aktor perubahan di sektor pertanian.
-  </p>
-</div>
-```
-
-  </section>
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
