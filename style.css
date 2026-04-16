@@ -157,3 +157,30 @@ font-size: 30px;
 color: white;
 cursor: pointer;
 }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+.image img {
+  width: 320px;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border: 5px solid white;
+}
+.hero {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
